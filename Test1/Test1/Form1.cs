@@ -638,27 +638,136 @@ namespace Robinet
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            int q, dp, ro, v, p1, p2;
-            //if(!String.IsNullOrWhiteSpace(textBox2.Text))
+            double q=0, dp=0, ro=0, v=0, p1=0, p2=0,x=0,t=0, kv=0;
+            if (!String.IsNullOrWhiteSpace(textBox2.Text))
+                q = Double.Parse(textBox2.Text);
+            if (!String.IsNullOrWhiteSpace(textBox3.Text))
+                dp = Double.Parse(textBox3.Text);
+            if (!String.IsNullOrWhiteSpace(textBox4.Text))
+                ro = Double.Parse(textBox4.Text);
+            if (!String.IsNullOrWhiteSpace(textBox5.Text))
+                v = Double.Parse(textBox5.Text);
+            if (!String.IsNullOrWhiteSpace(textBox6.Text))
+                p1 = Double.Parse(textBox6.Text);
+            if (!String.IsNullOrWhiteSpace(textBox7.Text))
+                p2 = Double.Parse(textBox7.Text);
+            if (!String.IsNullOrWhiteSpace(textBox8.Text))
+                x=t= Double.Parse(textBox8.Text);
+
+            if (radioButton1.Checked)
+            {
+                if (q>0 && dp>0 && ro > 0)
+                {
+                    kv = q * Math.Sqrt(ro / dp);
+                    textBox1.Text = kv.ToString("0.####");
+                }
+            }
+
+    //        if domeniu = 1 then
+    //if (q > 0) and(dp > 0) and(ro > 0) then
+    //      begin
+    //        kv:= q * sqrt(ro / dp);
+    //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+    //        end
+    //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 2 then
+                //if (q > 0) and(dp > 0) and(ro > 0) and(p2 > 0) and(t > 0) then
+                //        begin
+                //    kv:= q / 514 * sqrt(ro * t / (p2 * dp));
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 3 then
+                //if (q > 0) and(ro > 0) and(p1 > 0) and(t > 0) then
+                //       begin
+                //    kv:= q / 257 * sqrt(ro * t / p1);
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 4 then
+                //if (q > 0) and(dp > 0) and(v > 0) then
+                //      begin
+                //    kv:= q / 31.6 * sqrt(v / dp);
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 5 then
+                //if (q > 0) and(v > 0) and(p1 > 0) then
+                //      begin
+                //    kv:= q / 31.6 * sqrt(2 * v / p1);
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 6 then
+                //if (q > 0) and(dp > 0) and(p2 > 0) then
+                //      begin
+                //    kv:= q / (22.4 * sqrt(p2 * dp));
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 7 then
+                //if (q > 0) and(dp > 0) and(v > 0) then
+                //      begin
+                //    kv:= q / 31.6 * sqrt(v / dp);
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 8 then
+                //if (q > 0) and(p1 > 0) then
+                //     begin
+                //    kv:= 2 * q / (22.4 * p1);
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 9 then
+                //if (q > 0) and(v > 0) and(p1 > 0) then
+                //      begin
+                //    kv:= q / 31.6 * sqrt(2 * v / p1);
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 10 then
+                //if (q > 0) and(dp > 0) and(p2 > 0) and(x > 0) then
+                //       begin
+                //    kv:= q / 22.4 * sqrt(x / (p2 * dp));
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 11 then
+                //if (q > 0) and(dp > 0) and(v > 0) then
+                //      begin
+                //    kv:= q / 31.6 * sqrt(v / dp);
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 12 then
+                //if (q > 0) and(p1 > 0) and(x > 0) then
+                //      begin
+                //    kv:= 2 * q * sqrt(x) / (22.4 * p1);
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
+
+                //        if domeniu = 13 then
+                //if (q > 0) and(v > 0) and(p1 > 0) then
+                //      begin
+                //    kv:= q / 31.6 * sqrt(2 * v / p1);
+                //        Edit8.Text:= FloatToStr(round(kv * 10000) / 10000);
+                //        end
+                //else Edit8.Text:= 'Nu se poate calcula!';
 
 
-            //    if (Edit1.Text <> '') then q:= StrToFloat(Edit1.Text)
-            //else q:= 0;
-
-            //    if (Edit2.Text <> '') then dp:= StrToFloat(Edit2.Text)
-            //else dp:= 0;
-
-            //    if (Edit3.Text <> '') then ro:= StrToFloat(Edit3.Text)
-            //else ro:= 0;
-
-            //    if (Edit4.Text <> '') then v:= StrToFloat(Edit4.Text)
-            //else v:= 0;
-
-            //    if (Edit5.Text <> '') then p1:= StrToFloat(Edit5.Text)
-            //else p1:= 0;
-
-            //    if (Edit6.Text <> '') then p2:= StrToFloat(Edit6.Text)
-            //else p2:= 0;
         }
 
         private void TextBox2_KeyPress(object sender, KeyPressEventArgs e)
