@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Test1.Properties
+namespace Robinet.Properties
 {
 
 

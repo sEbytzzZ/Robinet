@@ -12,6 +12,7 @@ namespace Robinet
 {
     public partial class Form1 : Form
     {
+        public static double kv { get; set; }
         public Form1()
         {
             InitializeComponent();
@@ -643,7 +644,7 @@ namespace Robinet
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            double q=0, dp=0, ro=0, v=0, p1=0, p2=0,x=0,t=0, kv=0;
+            double q=0, dp=0, ro=0, v=0, p1=0, p2=0,x=0,t=0;
             if (!String.IsNullOrWhiteSpace(textBox2.Text))
                 q = Double.Parse(textBox2.Text);
             if (!String.IsNullOrWhiteSpace(textBox3.Text))
@@ -769,12 +770,19 @@ namespace Robinet
             //        end
             //else Edit8.Text= 'Nu se poate calcula!';
 
-
+            if(kv!=0)
+                button2.Visible = true;
         }
 
         private void TextBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
             keypres(sender, e);
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Rob form = new Rob();
+            form.ShowDialog();
         }
     }
 }
