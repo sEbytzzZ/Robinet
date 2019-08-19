@@ -705,72 +705,80 @@ namespace Robinet
                 }
                 else textBox1.Text = "Nu se poate calcula!";
             }
+            else if (radioButton6.Checked)
+            {
+                if (q > 0 && dp > 0 && p2 > 0)
+                {
+                    kv = q / (22.4 * Math.Sqrt(p2 * dp));
+                    textBox1.Text = kv.ToString("0.####");
+                }
+                else textBox1.Text = "Nu se poate calcula!";
+            }
+            else if (radioButton7.Checked)
+            {
+                if (q > 0 && dp > 0 && v > 0)
+                {
+                    kv = q / 31.6 * Math.Sqrt(v / dp);
+                    textBox1.Text = kv.ToString("0.####");
+                }
+                else textBox1.Text = "Nu se poate calcula!";
+            }
+            else if (radioButton8.Checked)
+            {
+                if (q > 0 && p1 > 0)
+                {
+                    kv = 2 * q / (22.4 * p1);
+                    textBox1.Text = kv.ToString("0.####");
+                }
+                else textBox1.Text = "Nu se poate calcula!";
+            }
+            else if (radioButton9.Checked)
+            {
+                if (q > 0 && v > 0 && p1>0)
+                {
+                    kv = q / 31.6 * Math.Sqrt(2 * v / p1);
+                    textBox1.Text = kv.ToString("0.####");
+                }
+                else textBox1.Text = "Nu se poate calcula!";
+            }
+            else if (radioButton10.Checked)
+            {
+                if (q > 0 && dp > 0 && p2 > 0 && x>0)
+                {
+                    kv = q / 22.4 * Math.Sqrt(x / (p2 * dp));
+                    textBox1.Text = kv.ToString("0.####");
+                }
+                else textBox1.Text = "Nu se poate calcula!";
+            }
+            else if (radioButton11.Checked)
+            {
+                if (q > 0 && dp > 0 && v > 0)
+                {
+                    kv = q / 31.6 * Math.Sqrt(v / dp);
+                    textBox1.Text = kv.ToString("0.####");
+                }
+                else textBox1.Text = "Nu se poate calcula!";
+            }
+            else if (radioButton12.Checked)
+            {
+                if (q > 0 && p1 > 0 && x > 0)
+                {
+                    kv = 2 * q * Math.Sqrt(x) / (22.4 * p1);
+                    textBox1.Text = kv.ToString("0.####");
+                }
+                else textBox1.Text = "Nu se poate calcula!";
+            }
+            else if (radioButton13.Checked)
+            {
+                if (q > 0 && v > 0 && p1 > 0)
+                {
+                    kv = q / 31.6 * Math.Sqrt(2 * v / p1);
+                    textBox1.Text = kv.ToString("0.####");
+                }
+                else textBox1.Text = "Nu se poate calcula!";
+            }
 
-            //        if domeniu = 6 then
-            //if (q > 0) and(dp > 0) and(p2 > 0) then
-            //      begin
-            //    kv= q / (22.4 * Math.Sqrt(p2 * dp));
-            //        Edit8.Text= FloatToStr(round(kv * 10000) / 10000);
-            //        end
-            //else Edit8.Text= 'Nu se poate calcula!';
-
-            //        if domeniu = 7 then
-            //if (q > 0) and(dp > 0) and(v > 0) then
-            //      begin
-            //    kv= q / 31.6 * Math.Sqrt(v / dp);
-            //        Edit8.Text= FloatToStr(round(kv * 10000) / 10000);
-            //        end
-            //else Edit8.Text= 'Nu se poate calcula!';
-
-            //        if domeniu = 8 then
-            //if (q > 0) and(p1 > 0) then
-            //     begin
-            //    kv= 2 * q / (22.4 * p1);
-            //        Edit8.Text= FloatToStr(round(kv * 10000) / 10000);
-            //        end
-            //else Edit8.Text= 'Nu se poate calcula!';
-
-            //        if domeniu = 9 then
-            //if (q > 0) and(v > 0) and(p1 > 0) then
-            //      begin
-            //    kv= q / 31.6 * Math.Sqrt(2 * v / p1);
-            //        Edit8.Text= FloatToStr(round(kv * 10000) / 10000);
-            //        end
-            //else Edit8.Text= 'Nu se poate calcula!';
-
-            //        if domeniu = 10 then
-            //if (q > 0) and(dp > 0) and(p2 > 0) and(x > 0) then
-            //       begin
-            //    kv= q / 22.4 * Math.Sqrt(x / (p2 * dp));
-            //        Edit8.Text= FloatToStr(round(kv * 10000) / 10000);
-            //        end
-            //else Edit8.Text= 'Nu se poate calcula!';
-
-            //        if domeniu = 11 then
-            //if (q > 0) and(dp > 0) and(v > 0) then
-            //      begin
-            //    kv= q / 31.6 * Math.Sqrt(v / dp);
-            //        Edit8.Text= FloatToStr(round(kv * 10000) / 10000);
-            //        end
-            //else Edit8.Text= 'Nu se poate calcula!';
-
-            //        if domeniu = 12 then
-            //if (q > 0) and(p1 > 0) and(x > 0) then
-            //      begin
-            //    kv= 2 * q * Math.Sqrt(x) / (22.4 * p1);
-            //        Edit8.Text= FloatToStr(round(kv * 10000) / 10000);
-            //        end
-            //else Edit8.Text= 'Nu se poate calcula!';
-
-            //        if domeniu = 13 then
-            //if (q > 0) and(v > 0) and(p1 > 0) then
-            //      begin
-            //    kv= q / 31.6 * Math.Sqrt(2 * v / p1);
-            //        Edit8.Text= FloatToStr(round(kv * 10000) / 10000);
-            //        end
-            //else Edit8.Text= 'Nu se poate calcula!';
-
-            if(kv!=0)
+            if (kv!=0)
                 button2.Visible = true;
         }
 
