@@ -46,14 +46,20 @@ namespace Robinet
             label14.Visible = false;
             label15.Visible = false;
             label16.Visible = false;
+
+            button2.Visible = false;
         }
 
         private void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
+                textBox3.Text = "";
                 textBox3.Visible = true;
+                textBox4.Text = "";
                 textBox4.Visible = true;
 
                 label3.Visible = true;
@@ -73,6 +79,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox4.Visible = false;
@@ -108,8 +115,12 @@ namespace Robinet
         {
             if (radioButton6.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
+                textBox3.Text = "";
                 textBox3.Visible = true;
+                textBox7.Text = "";
                 textBox7.Visible = true;
 
                 label3.Visible = true;
@@ -125,6 +136,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox7.Visible = false;
@@ -203,6 +215,7 @@ namespace Robinet
         {
             if (radioButton2.Checked)
             {
+                textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
                 textBox3.Text = "";
@@ -235,6 +248,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox4.Visible = false;
@@ -267,9 +281,14 @@ namespace Robinet
         {
             if (radioButton3.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
+                textBox4.Text = "";
                 textBox4.Visible = true;
+                textBox6.Text = "";
                 textBox6.Visible = true;
+                textBox8.Text = "";
                 textBox8.Visible = true;
 
                 label3.Visible = true;
@@ -291,6 +310,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox4.Visible = false;
                 textBox6.Visible = false;
@@ -311,8 +331,12 @@ namespace Robinet
         {
             if (radioButton4.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
+                textBox3.Text = "";
                 textBox3.Visible = true;
+                textBox5.Text = "";
                 textBox5.Visible = true;
 
                 label3.Visible = true;
@@ -330,6 +354,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox5.Visible = false;
@@ -347,8 +372,12 @@ namespace Robinet
         {
             if (radioButton5.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
+                textBox5.Text = "";
                 textBox5.Visible = true;
+                textBox6.Text = "";
                 textBox6.Visible = true;
 
                 label3.Visible = true;
@@ -363,6 +392,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox5.Visible = false;
                 textBox6.Visible = false;
@@ -380,8 +410,12 @@ namespace Robinet
         {
             if (radioButton7.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
+                textBox3.Text = "";
                 textBox3.Visible = true;
+                textBox5.Text = "";
                 textBox5.Visible = true;
 
                 label3.Visible = true;
@@ -398,6 +432,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox5.Visible = false;
@@ -415,8 +450,12 @@ namespace Robinet
         {
             if (radioButton9.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
+                textBox5.Text = "";
                 textBox5.Visible = true;
+                textBox6.Text = "";
                 textBox6.Visible = true;
 
                 label3.Visible = true;
@@ -434,6 +473,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox5.Visible = false;
                 textBox6.Visible = false;
@@ -451,7 +491,10 @@ namespace Robinet
         {
             if (radioButton8.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
+                textBox6.Text = "";
                 textBox6.Visible = true;
 
                 label3.Visible = true;
@@ -465,6 +508,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox6.Visible = false;
 
@@ -479,9 +523,14 @@ namespace Robinet
         {
             if (radioButton10.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
+                textBox3.Text = "";
                 textBox3.Visible = true;
+                textBox7.Text = "";
                 textBox7.Visible = true;
+                textBox8.Text = "";
                 textBox8.Visible = true;
 
                 label3.Visible = true;
@@ -502,6 +551,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox7.Visible = false;
@@ -520,8 +570,12 @@ namespace Robinet
         {
             if (radioButton11.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
+                textBox3.Text = "";
                 textBox3.Visible = true;
+                textBox5.Text = "";
                 textBox5.Visible = true;
 
                 label3.Visible = true;
@@ -540,6 +594,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox5.Visible = false;
@@ -557,8 +612,12 @@ namespace Robinet
         {
             if (radioButton12.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
+                textBox6.Text = "";
                 textBox6.Visible = true;
+                textBox8.Text = "";
                 textBox8.Visible = true;
 
                 label3.Visible = true;
@@ -575,6 +634,7 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
                 textBox6.Visible = false;
                 textBox8.Visible = false;
@@ -591,9 +651,13 @@ namespace Robinet
         {
             if (radioButton13.Checked)
             {
+                textBox1.Text = "";
+                textBox2.Text = "";
                 textBox2.Visible = true;
-                textBox6.Visible = true;
+                textBox5.Text = "";
                 textBox5.Visible = true;
+                textBox6.Text = "";
+                textBox6.Visible = true;
 
                 label3.Visible = true;
                 label3.Text = "Qm";
@@ -610,14 +674,17 @@ namespace Robinet
             }
             else
             {
+                button2.Visible = false;
                 textBox2.Visible = false;
+                textBox5.Visible = false;
                 textBox6.Visible = false;
-                textBox8.Visible = false;
 
                 label3.Visible = false;
                 label4.Visible = false;
                 label10.Visible = false;
                 label14.Visible = false;
+                label9.Visible = false;
+                label13.Visible = false;
 
             }
         }
@@ -791,6 +858,21 @@ namespace Robinet
         {
             Rob form = new Rob();
             form.ShowDialog();
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

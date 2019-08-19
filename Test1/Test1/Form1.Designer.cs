@@ -244,6 +244,7 @@ namespace Robinet
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(124, 20);
             this.textBox1.TabIndex = 15;
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged_1);
             // 
             // button1
             // 
@@ -261,6 +262,7 @@ namespace Robinet
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 18;
+            this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox2_KeyPress);
             // 
             // textBox3
@@ -417,6 +419,7 @@ namespace Robinet
             this.label13.Size = new System.Drawing.Size(38, 13);
             this.label13.TabIndex = 34;
             this.label13.Text = "m3/kg";
+            this.label13.Click += new System.EventHandler(this.Label13_Click);
             // 
             // label14
             // 
