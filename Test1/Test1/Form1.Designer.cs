@@ -84,7 +84,6 @@ namespace Robinet
             this.label1.TabIndex = 0;
             this.label1.Text = "Sistem Software pentru dimensionarea si alegerea Robinetului de reglare";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
@@ -247,7 +246,6 @@ namespace Robinet
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(124, 20);
             this.textBox1.TabIndex = 15;
-            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged_1);
             // 
             // button1
             // 
@@ -265,7 +263,6 @@ namespace Robinet
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 18;
-            this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox2_KeyPress);
             // 
             // textBox3
@@ -292,7 +289,6 @@ namespace Robinet
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 21;
             this.label4.Text = "m3/h";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // label5
             // 
@@ -302,7 +298,6 @@ namespace Robinet
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 22;
             this.label5.Text = "deltaPR";
-            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // label6
             // 
@@ -312,7 +307,6 @@ namespace Robinet
             this.label6.Size = new System.Drawing.Size(22, 13);
             this.label6.TabIndex = 23;
             this.label6.Text = "bar";
-            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
             // label7
             // 
@@ -322,7 +316,6 @@ namespace Robinet
             this.label7.Size = new System.Drawing.Size(50, 13);
             this.label7.TabIndex = 24;
             this.label7.Text = "densitate";
-            this.label7.Click += new System.EventHandler(this.Label7_Click);
             // 
             // label8
             // 
@@ -332,7 +325,6 @@ namespace Robinet
             this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 25;
             this.label8.Text = "kg/dm3";
-            this.label8.Click += new System.EventHandler(this.Label8_Click);
             // 
             // label3
             // 
@@ -342,7 +334,6 @@ namespace Robinet
             this.label3.Size = new System.Drawing.Size(15, 13);
             this.label3.TabIndex = 17;
             this.label3.Text = "Q";
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // label9
             // 
@@ -352,7 +343,6 @@ namespace Robinet
             this.label9.Size = new System.Drawing.Size(19, 13);
             this.label9.TabIndex = 26;
             this.label9.Text = "v2";
-            this.label9.Click += new System.EventHandler(this.Label9_Click);
             // 
             // textBox5
             // 
@@ -404,7 +394,6 @@ namespace Robinet
             this.label12.Size = new System.Drawing.Size(20, 13);
             this.label12.TabIndex = 32;
             this.label12.Text = "T1";
-            this.label12.Click += new System.EventHandler(this.Label12_Click);
             // 
             // textBox8
             // 
@@ -422,7 +411,6 @@ namespace Robinet
             this.label13.Size = new System.Drawing.Size(38, 13);
             this.label13.TabIndex = 34;
             this.label13.Text = "m3/kg";
-            this.label13.Click += new System.EventHandler(this.Label13_Click);
             // 
             // label14
             // 

@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Robinet
@@ -13,14 +7,19 @@ namespace Robinet
     public partial class Form1 : Form
     {
         public static double kv { get; set; }
+        public static short radioButton { get; set; }
+        public static double q { get; set; }
+        public static double dp { get; set; }
+        public static double ro { get; set; }
+        public static double v { get; set; }
+        public static double p1 { get; set; }
+        public static double p2 { get; set; }
+        public static double x { get; set; }
+        public static double t { get; set; }
+
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -61,11 +60,26 @@ namespace Robinet
             radioButton13.Visible = false;
             button2.Visible = false;
         }
+        private void keypres(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
 
         private void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
             {
+                radioButton = 1;
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
@@ -118,115 +132,11 @@ namespace Robinet
             }
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RadioButton6_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton6.Checked)
-            {
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox2.Visible = true;
-                textBox3.Text = "";
-                textBox3.Visible = true;
-                textBox7.Text = "";
-                textBox7.Visible = true;
-
-                label3.Visible = true;
-                label3.Text = "Qm";
-
-                label4.Visible = true;
-                label4.Text = "kg/h";
-                label5.Visible = true;
-                label6.Visible = true;
-                label11.Visible = true;
-                label15.Visible = true;
-
-            }
-            else
-            {
-                button2.Visible = false;
-                textBox2.Visible = false;
-                textBox3.Visible = false;
-                textBox7.Visible = false;
-
-                label3.Visible = false;
-                label4.Visible = false;
-                label5.Visible = false;
-                label6.Visible = false;
-                label11.Visible = false;
-                label15.Visible = false;
-            }
-        }
-
-
-        private void keypres(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-                (e.KeyChar != '.'))
-            {
-                e.Handled = true;
-            }
-
-            // only allow one decimal point
-            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void TextBox2_TextChanged(object sender, KeyPressEventArgs e)
-        {
-            keypres(sender, e);
-        }
-
-        private void Label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton2.Checked)
             {
+                radioButton = 2;
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
@@ -279,20 +189,11 @@ namespace Robinet
             }
         }
 
-        private void Label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void RadioButton3_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton3.Checked)
             {
+                radioButton = 3;
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
@@ -343,6 +244,7 @@ namespace Robinet
         {
             if (radioButton4.Checked)
             {
+                radioButton = 4;
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
@@ -384,6 +286,7 @@ namespace Robinet
         {
             if (radioButton5.Checked)
             {
+                radioButton = 5;
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
@@ -418,10 +321,51 @@ namespace Robinet
             }
         }
 
+        private void RadioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton6.Checked)
+            {
+                radioButton = 6;
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox2.Visible = true;
+                textBox3.Text = "";
+                textBox3.Visible = true;
+                textBox7.Text = "";
+                textBox7.Visible = true;
+
+                label3.Visible = true;
+                label3.Text = "Qm";
+
+                label4.Visible = true;
+                label4.Text = "kg/h";
+                label5.Visible = true;
+                label6.Visible = true;
+                label11.Visible = true;
+                label15.Visible = true;
+
+            }
+            else
+            {
+                button2.Visible = false;
+                textBox2.Visible = false;
+                textBox3.Visible = false;
+                textBox7.Visible = false;
+
+                label3.Visible = false;
+                label4.Visible = false;
+                label5.Visible = false;
+                label6.Visible = false;
+                label11.Visible = false;
+                label15.Visible = false;
+            }
+        }
+
         private void RadioButton7_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton7.Checked)
             {
+                radioButton = 7;
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
@@ -458,10 +402,44 @@ namespace Robinet
             }
         }
 
+        private void RadioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton8.Checked)
+            {
+                radioButton = 8;
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox2.Visible = true;
+                textBox6.Text = "";
+                textBox6.Visible = true;
+
+                label3.Visible = true;
+                label3.Text = "Qm";
+
+                label4.Visible = true;
+                label4.Text = "kg/h";
+                label10.Visible = true;
+                label14.Visible = true;
+
+            }
+            else
+            {
+                button2.Visible = false;
+                textBox2.Visible = false;
+                textBox6.Visible = false;
+
+                label3.Visible = false;
+                label4.Visible = false;
+                label10.Visible = false;
+                label14.Visible = false;
+            }
+        }
+
         private void RadioButton9_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton9.Checked)
             {
+                radioButton = 9;
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
@@ -499,42 +477,11 @@ namespace Robinet
             }
         }
 
-        private void RadioButton8_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton8.Checked)
-            {
-                textBox1.Text = "";
-                textBox2.Text = "";
-                textBox2.Visible = true;
-                textBox6.Text = "";
-                textBox6.Visible = true;
-
-                label3.Visible = true;
-                label3.Text = "Qm";
-
-                label4.Visible = true;
-                label4.Text = "kg/h";
-                label10.Visible = true;
-                label14.Visible = true;
-
-            }
-            else
-            {
-                button2.Visible = false;
-                textBox2.Visible = false;
-                textBox6.Visible = false;
-
-                label3.Visible = false;
-                label4.Visible = false;
-                label10.Visible = false;
-                label14.Visible = false;
-            }
-        }
-
         private void RadioButton10_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton10.Checked)
             {
+                radioButton = 10;
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
@@ -582,6 +529,7 @@ namespace Robinet
         {
             if (radioButton11.Checked)
             {
+                radioButton = 11;
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
@@ -624,6 +572,7 @@ namespace Robinet
         {
             if (radioButton12.Checked)
             {
+                radioButton = 12;
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
@@ -663,6 +612,7 @@ namespace Robinet
         {
             if (radioButton13.Checked)
             {
+                radioButton = 13;
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox2.Visible = true;
@@ -701,29 +651,10 @@ namespace Robinet
             }
         }
 
-        private void TextBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
-            double q=0, dp=0, ro=0, v=0, p1=0, p2=0,x=0,t=0;
+            q = 0; dp = 0; ro = 0; v = 0; p1 = 0; p2 = 0; x = 0; t = 0;
+
             if (!String.IsNullOrWhiteSpace(textBox2.Text))
                 q = Double.Parse(textBox2.Text);
             if (!String.IsNullOrWhiteSpace(textBox3.Text))
@@ -872,21 +803,6 @@ namespace Robinet
             form.ShowDialog();
         }
 
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button4_Click(object sender, EventArgs e) // Lichid
         {
             if (radioButton1.Visible == true)
@@ -982,7 +898,7 @@ namespace Robinet
             textBox6.Visible = false;
             textBox7.Visible = false;
             textBox8.Visible = false;
-        }
+        } //Gaz
 
         private void Button3_Click(object sender, EventArgs e)
         {
@@ -1030,6 +946,6 @@ namespace Robinet
             textBox6.Visible = false;
             textBox7.Visible = false;
             textBox8.Visible = false;
-        }
+        } //Abur
     }
 }

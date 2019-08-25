@@ -1,4 +1,6 @@
-﻿namespace Robinet
+﻿using System.Drawing;
+
+namespace Robinet
 {
     partial class Rob
     {
@@ -60,7 +62,6 @@
             this.label1.Size = new System.Drawing.Size(299, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Selecteaza tip  Robinet de Reglare";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // radioButton1
             // 
@@ -84,6 +85,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Robinet de Reglare cu 2 scaune PN40 si PN64";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.RadioButton2_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -107,48 +109,59 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Robinet de Reglare Colt PN40";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.RadioButton4_CheckedChanged);
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(108, 219);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
             this.textBox2.Location = new System.Drawing.Point(149, 261);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.Location = new System.Drawing.Point(149, 299);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 7;
             // 
             // textBox4
             // 
+            this.textBox4.BackColor = System.Drawing.Color.White;
             this.textBox4.Location = new System.Drawing.Point(315, 380);
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 8;
             // 
             // textBox5
             // 
+            this.textBox5.BackColor = System.Drawing.Color.White;
             this.textBox5.Location = new System.Drawing.Point(310, 219);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 9;
-            this.textBox5.TextChanged += new System.EventHandler(this.TextBox5_TextChanged);
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.Location = new System.Drawing.Point(491, 219);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(100, 96);
             this.richTextBox1.TabIndex = 10;
             this.richTextBox1.Text = "";
@@ -161,6 +174,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Verificare RR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label2
             // 
@@ -188,7 +202,6 @@
             this.label4.Size = new System.Drawing.Size(21, 13);
             this.label4.TabIndex = 14;
             this.label4.Text = "Dn";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // label5
             // 
@@ -198,7 +211,6 @@
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 15;
             this.label5.Text = "Cursa H";
-            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // label6
             // 
