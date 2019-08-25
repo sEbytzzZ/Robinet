@@ -450,11 +450,11 @@ namespace Robinet
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(328, 614);
+            this.button2.Location = new System.Drawing.Point(308, 637);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(112, 23);
             this.button2.TabIndex = 38;
-            this.button2.Text = "Next";
+            this.button2.Text = "Next Selectie RR";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
