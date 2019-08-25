@@ -46,7 +46,19 @@ namespace Robinet
             label14.Visible = false;
             label15.Visible = false;
             label16.Visible = false;
-
+            radioButton1.Visible = false;
+            radioButton2.Visible = false;
+            radioButton3.Visible = false;
+            radioButton4.Visible = false;
+            radioButton5.Visible = false;
+            radioButton6.Visible = false;
+            radioButton7.Visible = false;
+            radioButton8.Visible = false;
+            radioButton9.Visible = false;
+            radioButton11.Visible = false;
+            radioButton10.Visible = false;
+            radioButton12.Visible = false;
+            radioButton13.Visible = false;
             button2.Visible = false;
         }
 
@@ -873,6 +885,151 @@ namespace Robinet
         private void TextBox1_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button4_Click(object sender, EventArgs e) // Lichid
+        {
+            if (radioButton1.Visible == true)
+                return;
+
+            button4.BackColor = Color.White;
+            button5.BackColor = SystemColors.ButtonFace;
+            button5.UseVisualStyleBackColor = true;
+            button3.BackColor = SystemColors.ButtonFace;
+            button3.UseVisualStyleBackColor = true;
+
+            radioButton1.Visible = true;
+            radioButton2.Visible = false;
+            radioButton3.Visible = false;
+            radioButton4.Visible = false;
+            radioButton5.Visible = false;
+            radioButton6.Visible = false;
+            radioButton7.Visible = false;
+            radioButton8.Visible = false;
+            radioButton9.Visible = false;
+            radioButton11.Visible = false;
+            radioButton10.Visible = false;
+            radioButton12.Visible = false;
+            radioButton13.Visible = false;
+
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
+            label12.Visible = false;
+            label13.Visible = false;
+            label14.Visible = false;
+            label15.Visible = false;
+            label16.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            textBox7.Visible = false;
+            textBox8.Visible = false;
+
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            if (radioButton2.Visible == true)
+                return;
+
+            button5.BackColor = Color.White;
+            button4.BackColor = SystemColors.ButtonFace;
+            button4.UseVisualStyleBackColor = true;
+            button3.BackColor = SystemColors.ButtonFace;
+            button3.UseVisualStyleBackColor = true;
+
+            radioButton1.Visible = false;
+            radioButton2.Visible = true;
+            radioButton3.Visible = true;
+            radioButton4.Visible = false;
+            radioButton5.Visible = false;
+            radioButton6.Visible = false;
+            radioButton7.Visible = false;
+            radioButton8.Visible = false;
+            radioButton9.Visible = false;
+            radioButton11.Visible = false;
+            radioButton10.Visible = false;
+            radioButton12.Visible = false;
+            radioButton13.Visible = false;
+
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
+            label12.Visible = false;
+            label13.Visible = false;
+            label14.Visible = false;
+            label15.Visible = false;
+            label16.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            textBox7.Visible = false;
+            textBox8.Visible = false;
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            if (radioButton4.Visible == true)
+                return;
+
+            button3.BackColor = Color.White;
+            button5.BackColor = SystemColors.ButtonFace;
+            button5.UseVisualStyleBackColor = true;
+            button4.BackColor = SystemColors.ButtonFace;
+            button4.UseVisualStyleBackColor = true;
+
+            radioButton1.Visible = false;
+            radioButton2.Visible = false;
+            radioButton3.Visible = false;
+            radioButton4.Visible = true;
+            radioButton5.Visible = true;
+            radioButton6.Visible = true;
+            radioButton7.Visible = true;
+            radioButton8.Visible = true;
+            radioButton9.Visible = true;
+            radioButton11.Visible = true;
+            radioButton10.Visible = true;
+            radioButton12.Visible = true;
+            radioButton13.Visible = true;
+
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
+            label12.Visible = false;
+            label13.Visible = false;
+            label14.Visible = false;
+            label15.Visible = false;
+            label16.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            textBox7.Visible = false;
+            textBox8.Visible = false;
         }
     }
 }

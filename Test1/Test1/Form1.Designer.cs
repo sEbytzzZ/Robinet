@@ -69,6 +69,9 @@ namespace Robinet
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -87,7 +90,7 @@ namespace Robinet
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(66, 85);
+            this.label2.Location = new System.Drawing.Point(50, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 20);
             this.label2.TabIndex = 1;
@@ -96,7 +99,7 @@ namespace Robinet
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(70, 162);
+            this.radioButton1.Location = new System.Drawing.Point(54, 191);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(53, 17);
             this.radioButton1.TabIndex = 2;
@@ -107,7 +110,7 @@ namespace Robinet
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(70, 185);
+            this.radioButton2.Location = new System.Drawing.Point(54, 191);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(122, 17);
             this.radioButton2.TabIndex = 3;
@@ -118,7 +121,7 @@ namespace Robinet
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(70, 208);
+            this.radioButton3.Location = new System.Drawing.Point(54, 214);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(122, 17);
             this.radioButton3.TabIndex = 4;
@@ -129,7 +132,7 @@ namespace Robinet
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(70, 231);
+            this.radioButton4.Location = new System.Drawing.Point(54, 191);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(186, 17);
             this.radioButton4.TabIndex = 5;
@@ -140,7 +143,7 @@ namespace Robinet
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(70, 254);
+            this.radioButton5.Location = new System.Drawing.Point(54, 214);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(186, 17);
             this.radioButton5.TabIndex = 6;
@@ -151,7 +154,7 @@ namespace Robinet
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(70, 277);
+            this.radioButton6.Location = new System.Drawing.Point(54, 240);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(224, 17);
             this.radioButton6.TabIndex = 7;
@@ -162,7 +165,7 @@ namespace Robinet
             // radioButton7
             // 
             this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(70, 300);
+            this.radioButton7.Location = new System.Drawing.Point(54, 266);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(218, 17);
             this.radioButton7.TabIndex = 8;
@@ -173,7 +176,7 @@ namespace Robinet
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(70, 323);
+            this.radioButton8.Location = new System.Drawing.Point(54, 289);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(224, 17);
             this.radioButton8.TabIndex = 9;
@@ -184,7 +187,7 @@ namespace Robinet
             // radioButton9
             // 
             this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(70, 346);
+            this.radioButton9.Location = new System.Drawing.Point(54, 312);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(218, 17);
             this.radioButton9.TabIndex = 10;
@@ -195,7 +198,7 @@ namespace Robinet
             // radioButton10
             // 
             this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(70, 369);
+            this.radioButton10.Location = new System.Drawing.Point(54, 335);
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(218, 17);
             this.radioButton10.TabIndex = 11;
@@ -206,7 +209,7 @@ namespace Robinet
             // radioButton11
             // 
             this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(70, 392);
+            this.radioButton11.Location = new System.Drawing.Point(54, 358);
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(212, 17);
             this.radioButton11.TabIndex = 12;
@@ -217,7 +220,7 @@ namespace Robinet
             // radioButton12
             // 
             this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(70, 415);
+            this.radioButton12.Location = new System.Drawing.Point(54, 381);
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(218, 17);
             this.radioButton12.TabIndex = 13;
@@ -228,7 +231,7 @@ namespace Robinet
             // radioButton13
             // 
             this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(70, 438);
+            this.radioButton13.Location = new System.Drawing.Point(54, 404);
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(212, 17);
             this.radioButton13.TabIndex = 14;
@@ -239,7 +242,7 @@ namespace Robinet
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(308, 576);
+            this.textBox1.Location = new System.Drawing.Point(298, 499);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(124, 20);
@@ -248,7 +251,7 @@ namespace Robinet
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(328, 536);
+            this.button1.Location = new System.Drawing.Point(318, 459);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 16;
@@ -258,7 +261,7 @@ namespace Robinet
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(417, 159);
+            this.textBox2.Location = new System.Drawing.Point(491, 191);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 18;
@@ -267,7 +270,7 @@ namespace Robinet
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(417, 185);
+            this.textBox3.Location = new System.Drawing.Point(491, 217);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 19;
@@ -275,7 +278,7 @@ namespace Robinet
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(417, 211);
+            this.textBox4.Location = new System.Drawing.Point(491, 243);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 20;
@@ -284,7 +287,7 @@ namespace Robinet
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(526, 159);
+            this.label4.Location = new System.Drawing.Point(600, 191);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 21;
@@ -294,7 +297,7 @@ namespace Robinet
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(365, 187);
+            this.label5.Location = new System.Drawing.Point(439, 219);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 22;
@@ -304,7 +307,7 @@ namespace Robinet
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(526, 185);
+            this.label6.Location = new System.Drawing.Point(600, 217);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(22, 13);
             this.label6.TabIndex = 23;
@@ -314,7 +317,7 @@ namespace Robinet
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(360, 214);
+            this.label7.Location = new System.Drawing.Point(434, 246);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 13);
             this.label7.TabIndex = 24;
@@ -324,7 +327,7 @@ namespace Robinet
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(524, 211);
+            this.label8.Location = new System.Drawing.Point(598, 243);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 25;
@@ -334,7 +337,7 @@ namespace Robinet
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(379, 159);
+            this.label3.Location = new System.Drawing.Point(453, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(15, 13);
             this.label3.TabIndex = 17;
@@ -344,7 +347,7 @@ namespace Robinet
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(374, 245);
+            this.label9.Location = new System.Drawing.Point(448, 277);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(19, 13);
             this.label9.TabIndex = 26;
@@ -353,7 +356,7 @@ namespace Robinet
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(417, 242);
+            this.textBox5.Location = new System.Drawing.Point(491, 274);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 27;
@@ -361,7 +364,7 @@ namespace Robinet
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(417, 268);
+            this.textBox6.Location = new System.Drawing.Point(491, 300);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 28;
@@ -369,7 +372,7 @@ namespace Robinet
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(417, 294);
+            this.textBox7.Location = new System.Drawing.Point(491, 326);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 29;
@@ -378,7 +381,7 @@ namespace Robinet
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(374, 271);
+            this.label10.Location = new System.Drawing.Point(448, 303);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(20, 13);
             this.label10.TabIndex = 30;
@@ -387,7 +390,7 @@ namespace Robinet
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(374, 294);
+            this.label11.Location = new System.Drawing.Point(448, 326);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(20, 13);
             this.label11.TabIndex = 31;
@@ -396,7 +399,7 @@ namespace Robinet
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(374, 323);
+            this.label12.Location = new System.Drawing.Point(448, 355);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(20, 13);
             this.label12.TabIndex = 32;
@@ -405,7 +408,7 @@ namespace Robinet
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(417, 323);
+            this.textBox8.Location = new System.Drawing.Point(491, 355);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 20);
             this.textBox8.TabIndex = 33;
@@ -414,7 +417,7 @@ namespace Robinet
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(527, 245);
+            this.label13.Location = new System.Drawing.Point(601, 277);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(38, 13);
             this.label13.TabIndex = 34;
@@ -424,7 +427,7 @@ namespace Robinet
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(526, 271);
+            this.label14.Location = new System.Drawing.Point(600, 303);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(22, 13);
             this.label14.TabIndex = 35;
@@ -433,7 +436,7 @@ namespace Robinet
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(527, 300);
+            this.label15.Location = new System.Drawing.Point(601, 332);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(22, 13);
             this.label15.TabIndex = 36;
@@ -442,7 +445,7 @@ namespace Robinet
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(526, 325);
+            this.label16.Location = new System.Drawing.Point(600, 357);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(14, 13);
             this.label16.TabIndex = 37;
@@ -450,20 +453,56 @@ namespace Robinet
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(308, 637);
+            this.button2.Location = new System.Drawing.Point(298, 540);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 23);
+            this.button2.Size = new System.Drawing.Size(124, 23);
             this.button2.TabIndex = 38;
             this.button2.Text = "Next Selectie RR";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(513, 118);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(140, 36);
+            this.button3.TabIndex = 39;
+            this.button3.Text = "Abur";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(54, 118);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(140, 36);
+            this.button4.TabIndex = 40;
+            this.button4.Text = "Lichid";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(280, 118);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(140, 36);
+            this.button5.TabIndex = 41;
+            this.button5.Text = "Gaz";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 683);
+            this.ClientSize = new System.Drawing.Size(722, 605);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -552,6 +591,9 @@ namespace Robinet
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 
