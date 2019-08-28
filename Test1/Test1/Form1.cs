@@ -828,6 +828,8 @@ namespace Robinet
             radioButton12.Visible = false;
             radioButton13.Visible = false;
 
+            button2.Visible = false;
+
             label3.Visible = false;
             label4.Visible = false;
             label5.Visible = false;
@@ -877,6 +879,8 @@ namespace Robinet
             radioButton12.Visible = false;
             radioButton13.Visible = false;
 
+            button2.Visible = false;
+
             label3.Visible = false;
             label4.Visible = false;
             label5.Visible = false;
@@ -924,6 +928,8 @@ namespace Robinet
             radioButton10.Visible = true;
             radioButton12.Visible = true;
             radioButton13.Visible = true;
+
+            button2.Visible = false;
 
             label3.Visible = false;
             label4.Visible = false;

@@ -43,6 +43,7 @@ namespace Robinet
 
         private void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            textBox4.Text = "";
             double[,] datas = new double[,] {
                 {0 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,35 ,35 ,35 ,35 ,35 ,45 ,45 ,55 ,65 ,80 ,95},
                 {0 ,4 ,4 ,4 ,4 ,5 ,6 ,8 ,10 ,12 ,15 ,18 ,25 ,28 ,32 ,40 ,50 ,65 ,80 ,100 ,125 ,150 ,200 ,250 ,300 ,350},
@@ -69,6 +70,7 @@ namespace Robinet
 
         private void RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            textBox4.Text = "";
             double[,] datas = new double[,] {
                 {0 ,30 ,30 ,35 ,35 ,35 ,35 ,35 ,35 ,45 ,55 ,65 ,80 ,95 ,120},
                 {0 ,32 ,32 ,40 ,50 ,65 ,80 ,100 ,125 ,150 ,200 ,250 ,300 ,350 ,400},
@@ -91,6 +93,7 @@ namespace Robinet
 
         private void RadioButton3_CheckedChanged(object sender, EventArgs e)
         {
+            textBox4.Text = "";
             double[,] datas = new double[,]{
                 {0 ,30 ,30 ,35 ,35 ,45 ,55 ,65 ,80},
                 {0 ,25 ,30 ,80 ,100 ,150 ,200 ,250 ,300},
@@ -110,6 +113,7 @@ namespace Robinet
 
         private void RadioButton4_CheckedChanged(object sender, EventArgs e)
         {
+            textBox4.Text = "";
             double[,] datas = new double[,]{
                 { 0 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,30 ,35 ,35 ,35 ,35 ,35 ,45 ,45 ,55 ,65 ,80},
                 { 0 ,4 ,4 ,4 ,4 ,4 ,5 ,6 ,8 ,10 ,12 ,15 ,18 ,20 ,22 ,25 ,32 ,40 ,50 ,65 ,80 ,100 ,125 ,150 ,200 ,250 ,300},
@@ -147,38 +151,39 @@ namespace Robinet
                     qmax = kvs * 257 * Math.Sqrt(Form1.p1 / (Form1.ro * Form1.t));
                     break;
                 case 4:
-                    qmax = kvs * Math.Sqrt(Form1.dp / Form1.ro);
+                    qmax = kvs * 31.6 * Math.Sqrt(Form1.dp / Form1.v);
                     break;
                 case 5:
-                    qmax = kvs * Math.Sqrt(Form1.dp / Form1.ro);
+                    qmax = kvs * 31.6 * Math.Sqrt(Form1.p1 / (2 * Form1.v));
                     break;
                 case 6:
-                    qmax = kvs * Math.Sqrt(Form1.dp / Form1.ro);
+                    qmax = kvs * 22.4 * Math.Sqrt(Form1.p2 / Form1.dp);
                     break;
                 case 7:
-                    qmax = kvs * Math.Sqrt(Form1.dp / Form1.ro);
+                    qmax = kvs * 31.6 * Math.Sqrt(Form1.dp / Form1.v);
                     break;
                 case 8:
-                    qmax = kvs * Math.Sqrt(Form1.dp / Form1.ro);
+                    qmax = kvs * 22.4 * (Form1.p1 / 2);
                     break;
+                case 9:
+                    qmax = kvs * 31.6 * Math.Sqrt(Form1.p1 /(2 * Form1.v));
+                    break;
+                case 10:
+                    qmax = kvs * 22.4 * Math.Sqrt((Form1.p2 * Form1.dp) / Form1.x);
+                    break;
+                case 11:
+                    qmax = kvs * 31.6 * Math.Sqrt(Form1.dp / Form1.v);
+                    break;
+                case 12:
+                    qmax = kvs * 22.4 * (Form1.p1 /(2 * Math.Sqrt(Form1.x)));
+                    break;
+                case 13:
+                    qmax = kvs * 31.6 * Math.Sqrt(Form1.p1 / (2 * Form1.v));
+                    break;
+
             }
 
             textBox4.Text = qmax.ToString("0.####");
-
-            //if domeniu = 1 then qmax:= kvs * sqrt(dp / ro);
-            //if domeniu = 2 then qmax:= kvs * 514 * sqrt(p2 * dp / (ro * t));
-            //if domeniu = 3 then qmax:= kvs * 257 * sqrt(p1 / (ro * t));
-            //if domeniu = 4 then qmax:= kvs * 31.6 * sqrt(dp / v);
-            //if domeniu = 5 then qmax:= kvs * 31.6 * sqrt(p1 / (2 * v));
-            //if domeniu = 6 then qmax:= kvs * 22.4 * sqrt(p2 * dp);
-            //if domeniu = 7 then qmax:= kvs * 31.6 * sqrt(dp / v);
-            //if domeniu = 8 then qmax:= kvs * 22.4 * p1 / 2;
-            //if domeniu = 9 then qmax:= kvs * 31.6 * sqrt(p1 / (2 * v));
-            //if domeniu = 10 then qmax:= kvs * 22.4 * sqrt(p2 * dp / x);
-            //if domeniu = 11 then qmax:= kvs * 31.6 * sqrt(dp / v);
-            //if domeniu = 12 then qmax:= kvs * 22.4 * p1 / (2 * sqrt(x));
-            //if domeniu = 13 then qmax:= kvs * 31.6 * sqrt(p1 / (2 * v));
-            //Edit12.Text:= FloatToStr(round(qmax * 10000) / 10000);
         }
     }
 }
