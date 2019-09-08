@@ -81,6 +81,7 @@ namespace Robinet
 
         private void ReadCSV()
         {
+            int count = 0;
             using (var reader = new StreamReader("DataKV.csv"))
             {
                 while (!reader.EndOfStream)
@@ -88,8 +89,12 @@ namespace Robinet
                     var line = reader.ReadLine();
                     string[] values = line.Split(',');
 
-                    if(Int32.Parse(values[0]) >= Form1.kv)
+                    if (Int32.Parse(values[0]) >= Form1.kv && count < 5)
+                    {
                         dataGridView1.Rows.Add(values);
+                        count++;
+                    }
+                        
                 }
             }
         }
