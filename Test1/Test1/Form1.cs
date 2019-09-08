@@ -59,6 +59,7 @@ namespace Robinet
             radioButton12.Visible = false;
             radioButton13.Visible = false;
             button2.Visible = false;
+            button6.Visible = false;
         }
         private void keypres(object sender, KeyPressEventArgs e)
         {
@@ -106,6 +107,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox4.Visible = false;
@@ -171,6 +173,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox4.Visible = false;
@@ -224,6 +227,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox4.Visible = false;
                 textBox6.Visible = false;
@@ -269,6 +273,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox5.Visible = false;
@@ -308,6 +313,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox5.Visible = false;
                 textBox6.Visible = false;
@@ -348,6 +354,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox7.Visible = false;
@@ -389,6 +396,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox5.Visible = false;
@@ -425,6 +433,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox6.Visible = false;
 
@@ -464,6 +473,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox5.Visible = false;
                 textBox6.Visible = false;
@@ -511,6 +521,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox7.Visible = false;
@@ -555,6 +566,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox3.Visible = false;
                 textBox5.Visible = false;
@@ -596,6 +608,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox6.Visible = false;
                 textBox8.Visible = false;
@@ -637,6 +650,7 @@ namespace Robinet
             else
             {
                 button2.Visible = false;
+                button6.Visible = false;
                 textBox2.Visible = false;
                 textBox5.Visible = false;
                 textBox6.Visible = false;
@@ -788,8 +802,11 @@ namespace Robinet
                 else textBox1.Text = "Nu se poate calcula!";
             }
 
-            if (kv!=0)
+            if (kv != 0)
+            {
                 button2.Visible = true;
+                button6.Visible = true;
+            }
         }
 
         private void TextBox2_KeyPress(object sender, KeyPressEventArgs e)
@@ -829,6 +846,7 @@ namespace Robinet
             radioButton13.Visible = false;
 
             button2.Visible = false;
+            button6.Visible = false;
 
             label3.Visible = false;
             label4.Visible = false;
@@ -880,6 +898,7 @@ namespace Robinet
             radioButton13.Visible = false;
 
             button2.Visible = false;
+            button6.Visible = false;
 
             label3.Visible = false;
             label4.Visible = false;
@@ -930,6 +949,7 @@ namespace Robinet
             radioButton13.Visible = true;
 
             button2.Visible = false;
+            button6.Visible = false;
 
             label3.Visible = false;
             label4.Visible = false;
@@ -953,5 +973,11 @@ namespace Robinet
             textBox7.Visible = false;
             textBox8.Visible = false;
         } //Abur
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            RTable form = new RTable();
+            form.ShowDialog();
+        }
     }
 }
