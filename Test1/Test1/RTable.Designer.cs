@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using Microsoft.VisualBasic.FileIO;
@@ -72,12 +73,36 @@ namespace Robinet
             this.dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Thistle;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            ReadCSV();
+            ReadDataBase();
+            //ReadCSV();
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+
+        private void ReadDataBase()
+        {
+            string connetionString;
+            connetionString = @"Server=Sckipperon;Database=Seba;Trusted_Connection=True;";
+            using (SqlConnection connection = new SqlConnection(connetionString))
+            using (SqlCommand cmd = new SqlCommand("select top 5 * from kvs where kv >= " + Form1.kv, connection))
+            {
+                connection.Open();
+                using (SqlDataReader r = cmd.ExecuteReader())
+                {
+                    if (r.HasRows)
+                        while (r.Read())
+                        {
+                            dataGridView1.Rows.Add(Convert.ToInt32(r["KV"])
+                                , Convert.ToString(r["Producator"]) 
+                                , Convert.ToString(r["Produs"]) 
+                                , Convert.ToInt32(r["Pret"]));
+                            
+                        }
+                }
+            }
+        }
 
         private void ReadCSV()
         {
