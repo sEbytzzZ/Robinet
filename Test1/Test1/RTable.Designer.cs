@@ -157,7 +157,9 @@ namespace Robinet
                         if (r.HasRows)
                             while (r.Read())
                             {
-                                Produs.ToolTipText = Convert.ToString(r["DescriereProdus"]);
+                                string text = Convert.ToString(r["DescriereProdus"]);
+                                text = text.Replace("\r\n", Environment.NewLine);
+                                Produs.ToolTipText = text;
                             }
                     }
                 }
